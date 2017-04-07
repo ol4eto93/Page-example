@@ -1,0 +1,80 @@
+body {
+    padding: 20px 20px 20px 20px;
+    margin: 5px 5px 5px 5px;
+    size: 80%;
+}
+
+div.main {
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid black;
+}
+
+div.main>div.nav>nav.navigation>ul {
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+
+div.main>div.nav>nav.navigation>ul>li {
+    margin: 10px;
+    padding: 1px;
+    list-style: none;
+    display: inline;
+    position: relative;
+}
+
+div.main>div.nav>nav.navigation>ul>li>a:hover,
+div.footer>div.footerRight>a:hover,
+div.footer>div.footerLeft>a:hover {
+    background-color: grey;
+    color: yellow;
+}
+
+div.footer {
+    background-color: lightgreen;
+    border: 2px solid blue;
+}
+
+div.forms>fieldset>form>p.buttonSybmit {
+    float: right;
+}
+
+div.forms>fieldset>form>p.buttonReset {
+    clear: right;
+}
+
+div.main>div.footer>div.footerRight>a {
+    float: right;
+}
+
+div.main>div.footer>div.footerLeft>a {
+    clear: right;
+}
+
+div.main>div.body>div.quoteAndButton {
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid grey;
+}
+
+div.main>div.body>div.quoteAndButton>div.quote {
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    size: 70%;
+    background: lightgreen;
+}
+
+div.main>div.body>p.personalInformation {
+    background: lightgreen;
+    size: 80%;
+}
+
+div.main>div.body>div.forms>div.picture>img {
+    margin: 50px;
+    padding: 20px;
+    width: 550px;
+    height: 150px;
+    background: lightgreen;
+    border: 1px dashed black;
+}

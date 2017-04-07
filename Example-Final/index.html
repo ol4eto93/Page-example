@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" charset="utf-8" src="css/javascript.js"></script>
+</head>
+
+<body>
+    <div id="main" class="main">
+
+        <div id="nav" class="nav">
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="">Начало</a>
+                    </li>
+                    <li>
+                        <a href="">Галерия</a>
+                    </li>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="">За нас</a>
+                    </li>
+                    <li>
+                        <a href="">Край</a>
+                    </li>
+                    <li>
+                        <a href="">Линковете водят до №</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="body">
+            <div class="quoteAndButton">
+                <div id="randomQuote" class="quote">
+                    <p id="quote"></p>
+                    <span></span>
+                </div>
+                <form>
+                    <input type="button" name="prev" value="prev" onclick="changeButton('prev');" />
+                    <input type="button" name="add" value="add" onclick="addQuote();" />
+                    <input type="button" name="next" value="next" onclick="changeButton('next')" />
+                </form>
+            </div>
+            <p>Размисли разни</p>
+            <p class="personalInformation">Лична информация</p>
+            <div class="forms">
+                <fieldset>
+                    <caption>Лични данни</caption>
+                    <form action="http://enevsoft.net//echo.php" method="get" target="top">
+                        <label for="name"><input type="text" name="text" placeholder="Въведи трите си имена"/></label><br />
+                        <label for="gender"><input type="radio" name="gender" value="Mele"/>Мъж
+                            <input type="radio" name="gender" value="female" />Жена
+                            <input type="radio" name="gender" value="other" />Друго
+                        </label><br />
+                        <lable>Дата на раждане<input type="text" name="text" placeholder="мм/дд/уу" /></lable><br />
+                        <lable>Роден град
+                            <select id="countedOptions" onclick="addOption('countedOptions');">
+                                <option>Избери</option>
+                                <option>Друг град</option>
+                            </select>
+                        </lable><br />
+                        <label for="lang">Говорим език
+                            <input type="checkbox" name="lang" value="Bg" checked /> BG
+                            <input type="checkbox" name="lang" value="Ae" /> AE
+                            <input type="checkbox" name="lang" value="Hidni" /> Hindi
+                        </label><br />
+                        <label for="phone">Телефон за контакт:
+                            <input type="number" name="phone" placeholder="Въведи номер">
+                        </label><br />
+                        <textarea rows="7" cols="67" placeholder="Моля,напишете ни нещо..."></textarea><br />
+
+                        <p class="buttonSybmit"><button type="sybmit">Send</button></p>
+                        <p class="butoonReset"><input type="reset" name="reset" value="Reset" /></p>
+                    </form>
+                </fieldset>
+                <div class="picture"><img src="images/ibelieve.jpg" alt="IBelieve" /></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerRight"><a href="#">Team</a></div>
+            <div class="footerLeft"><a href="#">Web Academy</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
